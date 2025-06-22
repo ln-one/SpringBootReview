@@ -117,3 +117,13 @@ class StudentController {
 2. 仓库：`extends CrudRepository<实体类, ID类型>`
 3. Service：`@Service`, `@Autowired`
 4. Controller：`@RestController`, `@RequestMapping`, `@GetMapping`等
+### 附
+
+CrudRepository自带的基本方法：
+
+- `save(实体)` - 保存或更新实体
+- `findById(ID)` - 根据ID查找
+- `findAll()` - 查找所有
+- `count()` - 计算总数
+- `delete(实体)` - 删除一个实体
+- `existsById(ID)` - 检查ID是否存在
