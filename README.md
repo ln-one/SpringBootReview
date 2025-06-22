@@ -3,7 +3,6 @@
 ## 1. 实体类
 
 ```java
-// Student.java
 @Data
 public class Student {
     private Integer id;
@@ -15,7 +14,6 @@ public class Student {
 ## 2. Repository接口
 
 ```java
-// StudentRepository.java
 public interface StudentRepository {
     void save(Student student);
     void update(Student student);
@@ -28,7 +26,6 @@ public interface StudentRepository {
 ## 3. JDBC实现类
 
 ```java
-// JdbcStudentRepository.java
 @Repository
 public class JdbcStudentRepository implements StudentRepository {
 
@@ -91,7 +88,6 @@ public class JdbcStudentRepository implements StudentRepository {
 ## 4. Controller类
 
 ```java
-// StudentController.java
 @RestController
 @RequestMapping("/students")
 public class StudentController {
