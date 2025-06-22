@@ -1,7 +1,6 @@
 # Spring Boot + JDBC 单表CRUD模板
-
-## 1. 实体类
 [超级简单版本](Simplest.md)
+## 1. 实体类
 
 ```java
 @Data
